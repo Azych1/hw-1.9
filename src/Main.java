@@ -1,10 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
-
         task4();
-
-
     }
 
     public static int[] generateRandomArray() {
@@ -26,6 +23,8 @@ public class Main {
             System.out.println("В день " + (i + 1) + " было потрачено " + sum);
         }
         System.out.println();
+
+
         System.out.println("Задача 2");
         int min = budget[0];
         int max = budget[0];
@@ -42,19 +41,18 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей. " +
                 "Минимальная сумма трат за день составила " + max + " рублей.");
         System.out.println();
-        System.out.println("Задача 3");
 
+
+        System.out.println("Задача 3");
         double summ = 0;
-        double days = 0;
+
         for (int i = 0; i < budget.length; i++) {
             summ += budget[i];
-            days++;
         }
 
-        System.out.printf("Потратили: %.0f" + ". Среднее значение: %.2f", summ, summ / days);
+        System.out.printf("Потратили: %.0f" + ". Среднее значение: %.2f", summ, summ / budget.length);
         System.out.println();
         System.out.println();
-
     }
 
     public static void task4() {
